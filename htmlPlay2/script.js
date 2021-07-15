@@ -1,4 +1,4 @@
-'use strict'
+'use strict' // `use strict` works more cleanly and prevent mistakes
 
 // console.log("Definitely NOT A Scam Page");
 
@@ -542,18 +542,60 @@
 // JavaScript Object Notation
 // you can use this in JavaScript with no issues
 
-let newJSON = {
-    "name" : "Cameron",
-    "age" : 28
-}
+// let newJSON = {
+//     "name" : "Cameron",
+//     "age" : 28
+// }
 
 // to convert JSON to different DATA TYPES
 
 // JSON to STRING
-let str = JSON.stringify(newJSON);
-console.log(str);
+// let str = JSON.stringify(newJSON);
+// console.log(str);
 
 // STRING to JSON
-let my = JSON.parse(str);
-console.log(my);
-console.log(my.name);
+// let my = JSON.parse(str);
+// console.log(my);
+// console.log(my.name);
+
+// EXERCISE
+
+//     Create an object called darthVader with the keys:values 
+//              allegiance:empire
+//              weapon:lightsabre
+//              sith: true  
+//              log darthVader
+
+// let lordVader = {
+//     allegiance: "Empire",
+//     weapon: "Light Sabre",
+//     weaponColour: "Red",
+//     sith: true,
+//     jedi: false
+// };
+
+// console.log(lordVader);
+
+// // literal notation, add another sith in to the mix'th
+
+// let admiralThrawn = { allegiance: "Empire", weapon: "Light Sabre", weaponColour: "Red", sith: true, jedi: false };
+
+// console.log(admiralThrawn);
+
+// let empireBadboys = Array(2);
+// console.log(Array);
+
+// NEWEST ATTEMPT WITH TWEAKS
+
+let empireBadboys = [
+    {name: "Admiral Thrawn",  allegiance: "Empire", weapon: "Dual Sabre", weaponColour: "Red + White", sith: true, jedi: false},
+    {name: "Darth Vader",  allegiance: "Empire", weapon: "Light Sabre", weaponColour: "Red", sith: true, jedi: false}
+]
+
+
+
+// This kind of answers questions in the next exercise
+// console.log(empireBadboys.length);
+// This clearly doesn't work, it adds 6 new OBJECTS to the Array
+// empireBadboys.push("Darth Maul", "Empire", "Double Sabre", "Red", true, false);
+
